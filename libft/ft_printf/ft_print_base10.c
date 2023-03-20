@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
 #include "../libft.h"
 
 static int	ft_int_len(unsigned int n)

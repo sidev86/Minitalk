@@ -4,15 +4,15 @@ OBJECTS = $(SOURCES:.c=.o)
 
 CFLAGS			= -Wall -Wextra -Werror
 
-all: client server
+all: libft client server
 
 bonus: client server
 
-client: client.o libft
-	gcc -o $@ $< -Llibft -lft
+client: client.o 
+	gcc -o $@ $< libft/libft.a
 
-server: server.o libft
-	gcc -o $@ $< -Llibft -lft
+server: server.o
+	gcc -o $@ $< libft/libft.a
 
 %.o: %.c
 	$(CC) -c $(CFLAGS) $?

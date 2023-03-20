@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdarg.h>
-#include "ft_printf.h"
+#include "../libft.h"
 
 static char	ft_check_flag(const char f, const char *s)
 {

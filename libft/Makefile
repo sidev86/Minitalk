@@ -29,9 +29,9 @@ NAME			= libft.a
 all:			$(NAME)
 
 $(NAME):		$(OBJECTS) $(PRINTF_OBJECTS) $(PRINTF_HEADER)
-				ar rcs $(NAME) $(OBJECTS) $(PRINTF_OBJECTS)
+				ar -r $(NAME) $(OBJECTS) $(PRINTF_OBJECTS)
 bonus:			$(OBJECTS) $(BOBJECTS)
-				ar rcs $(NAME) $(OBJECTS) $(BOBJECTS)
+				ar -r $(NAME) $(OBJECTS) $(BOBJECTS)
 
 clean:
 				$(RM) $(OBJECTS) $(BOBJECTS) $(PRINTF_OBJECTS)
