@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   client.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sibrahim <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/21 09:55:11 by sibrahim          #+#    #+#             */
+/*   Updated: 2023/03/21 09:55:14 by sibrahim         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <signal.h>
 #include "libft/libft.h"
 
@@ -6,7 +18,7 @@ static void	bytes_received(int sig)
 	static int	bytes = 0;
 
 	if (sig == SIGUSR1)
-	bytes++;
+		bytes++;
 	else
 	{
 		ft_printf("String received. (%d bytes)", bytes);

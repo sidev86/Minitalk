@@ -1,33 +1,30 @@
-SOURCES 			= server.c client.c
-
+SOURCES = server.c client.c
 OBJECTS = $(SOURCES:.c=.o)
 
-CFLAGS			= -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 all: libft client server
 
-bonus: client server
-
-client: client.o 
-	gcc -o $@ $< libft/libft.a
+client: client.o
+	gcc -o $@ $< -no-pie libft/libft.a
 
 server: server.o
-	gcc -o $@ $< libft/libft.a
+	gcc -o $@ $< -no-pie libft/libft.a
 
 %.o: %.c
-	$(CC) -c $(CFLAGS) $?
+	gcc $(CFLAGS) -c $< -o $@
 
 libft:
 	make -C libft
 
-clean: 
-	rm -f $(OBJECTS) 
+clean:
+	rm -f $(OBJECTS)
 	make -C libft clean
 
 fclean: clean
-	rm -f client server libft/libft.a
+	rm -f client server
+	make -C libft fclean
 
 re: fclean all
 
-
-.PHONY: all bonus libft clean fclean re 
+.PHONY: all bonus libft clean fclean re
