@@ -34,19 +34,19 @@ For the optional part of the project you have to implement these extra functiona
 </ul>
 
 <h2>Usage</h2>
-<ul>
+<ol>
     <li><strong>Start the Server:</strong> Run the server program. It will output its PID.</li>
     <li><strong>Run the Client:</strong> Execute the client program with the server's PID and the message string as parameters.</li>
-</ul>
+</ol>
 
 <h3>Example</h3>
-<pre><code>bash
+```bash
 # Start the server
 ./server
 
 # Output: PID of the server
 
 # Run the client
-./client &lt;server_pid&gt; "Hello, World!"
-</code></pre>
+./client server_pid "Hello, World!"
+```
 
