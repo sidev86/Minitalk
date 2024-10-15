@@ -1,1 +1,1 @@
-<h1>minitalk.</h1>
+<h1>minitalk</h1>
