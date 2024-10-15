@@ -51,3 +51,7 @@ For the optional part of the project you have to implement these extra functiona
 ./client server_pid "Hello, World!"
 ```
 
+<h2>Compilation Instructions</h2>
+
+Type <strong><code>make</code></strong> to generate the 2 executable files <strong><code>server</code></strong> and <strong><code>client</code></strong>
+
