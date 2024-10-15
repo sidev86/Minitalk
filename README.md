@@ -40,6 +40,7 @@ For the optional part of the project you have to implement these extra functiona
 </ol>
 
 <h3>Example</h3>
+
 ```bash
 # Start the server
 ./server
