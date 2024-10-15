@@ -22,3 +22,14 @@ The server is designed to handle multiple client requests in sequence, efficient
     <li><strong>Signal Communication:</strong> Communication between the client and server is achieved solely through UNIX signals, specifically <code>SIGUSR1</code> and <code>SIGUSR2</code>.</li>
     <li><strong>Multi-client Support:</strong> The server can receive strings from multiple clients in succession without needing to restart.</li>
 </ul>
+
+
+<h2>Bonus</h2>
+
+For the optional part of the project you have to implement these extra functionalities:
+
+<ul>
+    <li><strong>Acknowledgment Signals:</strong> The server sends an acknowledgment signal back to the client for every message received.</li>
+    <li><strong>Unicode Support:</strong> The program supports Unicode characters for enhanced messaging capabilities.</li>
+</ul>
+
